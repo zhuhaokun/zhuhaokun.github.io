@@ -1,3 +1,19 @@
-theme: jekyll-theme-cayman
-name: "什么否没有的Blog"
-description: ""
+collections:
+authors:
+output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
